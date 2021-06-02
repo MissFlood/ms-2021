@@ -1,0 +1,357 @@
+body {
+    overflow-x: hidden!important;
+    max-width: 100%!important;
+}
+
+.page-header-img {
+    position: absolute;
+    top:0;
+   width: 100%;
+   padding-top: 12em;
+   display: flex;
+   flex-direction: row;
+   align-items: flex-end;
+   padding-bottom: 3em;
+  
+}
+
+#metals-page-header-img {
+    background-color: black;
+
+}
+.page-title {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 45px;
+    line-height: 1;
+    margin-top: 20px;
+    
+}
+
+.page-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.crumb{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 40px;
+
+
+}
+
+.back-link, .active-page {
+    display: inline;
+}
+.active-page span {
+    
+    text-decoration: underline;
+   
+}
+.back-link a, .back-link {
+    color: white;
+    text-decoration: none;
+}
+.back-link a span:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+.intro {
+    padding-top: 20em;
+    padding-bottom: 4em;
+    }
+
+    .page-section h1 {
+        text-align: left!important;
+     
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 45px;
+        line-height: 1;
+    }
+    .page-section h2 {
+        font-size: 24px;
+      margin-bottom: 10px;
+        
+    }
+    .page-section h3 {
+        font-size: 15px;
+        color: white;
+        background-color: black;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    }
+
+
+
+.section-img-left {
+    width: 50vw;
+   position: relative;
+   left: 30%; 
+   margin-left: -30vw;
+   height: 100%;
+}
+
+.section-img-right {
+    width: 65vw;
+   position: relative;
+   height: 100%;
+}
+
+.right-padding {
+    padding-left: 60px!important;
+    }
+.left-padding{
+        padding-right: 60px!important;
+    }
+
+.section-text {
+        padding: 60px 0 60px 0;
+    }
+    .page-section .row {
+        --bs-gutter-x: 0;
+    }
+@media only screen and (max-width: 1600px) {
+    .section-img-left {
+       left: 22%; 
+       margin-left: -22vw;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .section-img-left, .section-img-right {
+        height: 500px;
+        width: 100vw;
+        left: 50%; 
+        margin-left: -50vw;
+      
+    }
+    .section-text {
+        padding-top: 10px;
+    }
+    .right-padding {
+        padding-left: calc(var(--bs-gutter-x)/ 2)!important;
+    }
+    .left-padding {
+    padding-right: calc(var(--bs-gutter-x)/ 2)!important;
+    }
+    .reverse {
+        flex-direction: column-reverse;
+    }
+    }
+    
+    @media only screen and (max-width: 768px) {
+    
+        .section-img-left, .section-img-right {
+            height: 350px;
+            width: 100vw;
+            position: relative;
+            left: 50%; 
+            margin-left: -50vw;
+          
+        }
+    }
+    
+
+
+.manufacturer-list div {
+    padding-right: 0px; 
+}
+
+.more-arrow {
+    width: 19px;
+    height: 19px;
+  text-align: center;
+    display: inline-block;
+
+    border-radius: 20px;
+}
+.manufacturer-h3 {
+    margin-bottom: 0px;
+}
+
+.manufacturer-link-x3 {
+    width: 92%;
+    padding-bottom: 80%;
+
+    position: relative;
+    overflow: hidden;
+ display: block;
+ text-decoration: none;
+ overflow:hidden;
+ box-shadow: 2px 2px 5px rgb(83, 83, 83);
+ background-size: cover;
+
+}
+.manufacturer-link-x2 {
+    width: 92%;
+    padding-bottom: 50%;
+    
+  margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+ display: block;
+ text-decoration: none;
+ overflow:hidden;
+ box-shadow: 2px 2px 5px rgb(83, 83, 83);
+ background-size: cover;
+}
+.manufacturer-link {
+    width: 100%;
+    padding-bottom: 60%;
+  margin: auto;
+    position: relative;
+    overflow: hidden;
+ display: block;
+ text-decoration: none;
+ overflow:hidden;
+ box-shadow: 2px 2px 5px rgb(83, 83, 83);
+ background-size: cover;
+}
+
+
+.manufacturer-link:hover .more-arrow {
+   background-color: white;
+   color: black;
+}
+.manufacturer-link-x2:hover .more-arrow {
+    background-color: white;
+    color: black;
+ }
+.manufacturer-link-x3:hover .more-arrow {
+    background-color: white;
+    color: black;
+ }
+.manufacturer-link:hover .underline {
+    text-decoration: underline;
+ }
+
+ .manufacturer-link-x2:hover .underline {
+    text-decoration: underline;
+ }
+
+ .manufacturer-link-x3:hover .underline {
+    text-decoration: underline;
+ }
+/* #region Metals Page */
+#metals-page-header-img {
+    background-size: cover;
+    background-position: center;
+}
+
+
+#falzonal-link {
+    background-image: url(../images/falzonal-aluminium.jpg);
+
+}
+#prefa-link {
+    background-image: url(../images/prefa_prefalz_2.jpg);
+
+}
+#traditional-textures-link {
+    background-image: url(../images/systems/hispec-ral-7016-snaplock.jpg);
+    
+}
+#falzinc-link {
+    background-image: url(../images/falzonal-aluminium-2.jpg);
+    
+}
+#aurubis-link {
+    background-image: url(../images/sheffield-market-brass-shingles.jpeg);
+  
+}
+#aurubis-link-bronze {
+    background-image: url(../images/waitrose-bronze-reveal-panel-l.jpeg);
+    
+}
+#aurubis-link-copper {
+    background-image: url(../images/hispec-edgehill-library-nordic-brown-light-copper-cropped-2.jpg);
+   
+}
+#greencoat-link {
+    background-image: url(../images/rac-birchwood-plx-xxx-2-good.jpg);
+    
+}
+#roofinox-link {
+    background-image: url(../images/roofinox-tin-matte-house.jpg);
+ 
+}
+#nedzink-link {
+    background-image: url(../images/hispec-ngas-nedzink-noir-good.jpg);
+  
+}
+#zintek-link {
+    background-image: url(../images/zintek.jpg);
+    
+}
+#zm-silesia-link {
+    background-image: url(../images/zm-silesia-cladding.jpeg);
+ 
+}
+
+
+#aluminium-img{
+    background-image:url(../images/metalline-apex-barton-school-dover-falzinc-medium.jpg);
+    background-size:cover;
+width: 100%;
+   height: 100%;
+}
+#brass-img {
+    background-image:url(../images/varla-c4d2-nordic-brass-good.JPG);
+    background-size: cover;
+    background-position: center right;
+    width: 100%;
+   height: 100%;
+  
+}
+#bronze-img {
+    background-image:url(../images/waitrose-bronze-reveal-panel-l.jpeg);
+    background-size: cover;
+    height: 100%;
+}
+#copper-img {
+    background-image:url(../images/hispec-edgehill-library-nordic-brown-light-copper-cropped-2.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+   height: 100%;
+}
+#steel-img {
+    background-image:url(../images/aclass-west-malling-plx-anthracite-good.JPG);
+    background-size: cover;
+    width: 100%;
+   height: 100%;
+}
+
+#stainless-steel-img {
+    background-image:url(../images/metalex-sudbourne-stainless-steel-snaplock.JPG);
+    background-size: cover;
+    width: 100%;
+   height: 100%;
+}
+#zinc-img {
+    background-image:url(../images/hispec-ngas-nedzink-noir-good.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+   height: 100%;
+}
+
+
+/* #endregion */
+
+    
+
+
+
+
+

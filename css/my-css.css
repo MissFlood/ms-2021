@@ -1,0 +1,1482 @@
+/* #region General */
+header, h1 {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.8;
+  font-size: 13px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 2.3;
+  color: #595959;
+ overflow-x:hidden;
+}
+
+@media only screen and (max-width: 768px) {
+body {
+  line-height: 2;
+ 
+}
+
+}
+
+#who-we-are {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#metals {
+  padding-top: 70px;
+}
+.systems {
+  padding-top: 70px;
+}
+.band {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#metals .more-button, .systems .more-button {
+width: 300px;
+}
+.band .more-button {
+  margin-top:0px!important;
+}
+#rws-section {
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+#contact-form {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+.more-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.separator {
+  padding: 2px 0 15px 0;
+}
+.separator-2 {
+  padding: 2px 0 30px 0;
+}
+
+hr {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+
+}
+
+section h1 {
+  text-transform: uppercase;
+letter-spacing: 3px;
+font-size: 35px;
+line-height: 1;
+text-align: center;
+}
+
+section h2 {
+margin-bottom: 20px;
+}
+
+.more-button {
+  display: block;
+  width: 150px;
+  padding: 6px;
+  margin-top: 30px;
+  border: solid rgb(54, 54, 54) 1px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(54, 54, 54);;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.more-button:hover {
+  color: white;
+  background-color: rgb(54, 54, 54);
+}
+
+.hide-overflow {
+  overflow: hidden;
+  height: 100%;
+  margin-bottom: 5px;
+}
+
+
+.opacity {
+  display: block;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+text-align: center;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.267);
+text-decoration: none;
+  color: white;
+}
+.opacity:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: white;
+  font-size: 16px!important;
+}
+/* #endregion */
+
+/* #region Grey Background */
+.grey-theme {
+  background-color: rgb(230, 230, 230);
+}
+@media only screen and (max-width: 768px) {
+  .grey-theme {
+    color: #383838;
+  }
+  }
+/* #endregion */
+
+/* #region Picture Scroll Background */
+.scroll-background {
+  background-image: url(../images/background-2.png);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #b8b8b8;
+}
+
+#contact-form input, #message-input {
+  border-color:#b8b8b8;
+color: #b8b8b8;
+  background-color: transparent;
+}
+::placeholder{
+  color: #b8b8b8!important;
+}
+
+.scroll-background .more-button {
+  border-color: white;
+  color: white;
+}
+.scroll-background h1, .scroll-background h3, .scroll-background h2, .scroll-background h4 {
+  color: white;
+}
+
+.scroll-background .more-button:hover{
+ color:#333;
+ background-color: white;
+}
+.scroll-background .flex img {
+  height: 40px;
+  margin-right: 10px;
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+}
+
+@media only screen and (max-width: 992px) {
+  .scroll-background {
+    background-position: bottom;
+    background-attachment: scroll;
+  }
+  }
+/* #endregion */
+
+/* #region Dark Grey Background */
+.dark-grey-theme {
+ background-color: rgb(29, 29, 29);
+ color: #b8b8b8;
+}
+
+.dark-grey-theme a{
+
+  color: #b8b8b8;
+  text-decoration: none;
+ }
+
+.dark-grey-theme a:hover {
+  color: white;
+}
+.dark-grey-theme .more-button {
+  border-color: white;
+  color: white;
+}
+.dark-grey-theme h1, .dark-grey-theme h3, .dark-grey-theme h2, .dark-grey-theme h4 {
+  color: white;
+}
+
+.dark-grey-theme .more-button:hover{
+ color:#333;
+ background-color: white;
+}
+.dark-grey-theme .flex img {
+  height: 40px;
+  margin-right: 10px;
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+}
+
+/* #endregion */
+
+/* #region White Background */
+.white-theme{
+  color: #595959;
+  background-color: rgb(255, 255, 255);
+ }
+
+ .white-theme h1, .white-theme h3 {
+   color: ;
+ }
+ 
+ 
+.white-theme a {
+  color: #595959;
+}
+@media only screen and (max-width: 768px) {
+.white-theme {
+  color: #383838;
+}
+}
+ /* #endregion */
+
+/* #region About Section */
+.about-text {
+margin-left: auto;
+margin-right: auto;
+
+}
+#about-button-2 {
+  display: none;
+}
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#who-we-are .row {
+  flex-direction: row-reverse;
+}
+#who-we-are .band {
+  display: none;
+  }
+
+@media only screen and (max-width: 992px) {
+  #who-we-are .band {
+    display: unset;
+    display: flex;
+    }
+#who-we-are {
+  padding: 60px 0 0px 0;
+}
+
+#about-button-1 {
+  display: none;
+}
+#about-button-2 {
+  display:unset;
+}
+#who-we-are h1 {
+ text-align: center!important;
+}
+}
+/* #endregion */
+
+/* #region Top Header */
+.top-header {
+  padding-left: 35px;
+  padding-right: 35px;
+  position: relative;
+  z-index: 1020;
+  display: flex;
+  justify-content: space-between;
+  color: white!important;
+  font-size: 13px;
+  letter-spacing: 1px;
+height: 40px;
+line-height: 40px;
+border-bottom: solid 1px rgba(255,255,255,.2);
+}
+
+.top-header ul {
+  padding-left: 0px;
+}
+.left-top-header, .right-top-header {
+display: flex;
+list-style: none;
+justify-content: space-between;
+
+}
+.left-top-header li, .right-top-header li {
+  margin-right: 30px;
+ 
+}
+.left-top-header a {
+  text-decoration: none;
+  color: white;
+}
+.social-icons {
+height: 16px;
+}
+.contact-icons {
+  height: 14px;
+  padding-bottom: 2px;
+  padding-right: 3px;
+}
+/* #endregion */
+
+/* #region Sticky Nav Bar DESKTOP */
+.nav-link:focus,.nav-link:active {
+  outline: none!important;
+  box-shadow: none;
+}
+
+@media only screen and (min-width: 1400px) {
+  .navbar-brand {
+    position: absolute;
+  }
+}
+.navbar {
+  width: 100%;
+
+}
+
+/* #endregion */
+
+/* #region Moving Home Image */
+.carousel-item {
+  transition-duration: 30s;
+  transition: linear 30s;
+}
+.carousel-container {
+  margin-top: -105px;
+  max-width: 100%;
+overflow-x: hidden;
+}
+
+.carousel {
+  width: 2000px;
+}
+.carousel-image-1, .carousel-image-2, .carousel-image-3, .carousel-image-4, .carousel-image-5 {
+
+  width: 100%;
+height: 100vh; /* You must set a specified height */
+
+background-position:center; /* Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.carousel-image-1 {
+  background-image: url(../images/lfc-training-centre.jpg);
+}
+.carousel-image-2 {
+  background-image: url(../images/lfc-training-centre.jpg);
+}
+
+.carousel-image-3 {
+  background-image: url(../images/csm_fassade_kassettensystem_kassetten_973667edb3.jpg);
+}
+/* #endregion */
+
+/* #region Moving Welcome Text */
+.welcome-text-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1000;
+}
+.word-carousel {
+  height: ;
+}
+.word-carousel .item {
+  width : 100%;
+  height: ;
+}
+.welcome-text-wrapper .item h1 {
+ text-align: center;
+  font-size: 4rem;
+  font-weight: 400!important;
+  letter-spacing: 4px;
+  line-height: 1.5;
+  color: white;
+  text-transform: uppercase!important;
+  padding-top:0px!important;
+  margin-top: 0px!important;
+  }
+  .welcome-text-wrapper .more-button {
+    border-color: white;
+    color: white;
+    margin-top: 0px;
+    border-radius: 30px;
+  }
+  .welcome-text-wrapper .more-button:hover {
+    background-color: #383838;
+    color: white;
+    border-color: #383838;
+  }
+.top-welcome-text {
+  width: 100%;
+  text-align: center;
+  color: white;
+  
+}
+.top-welcome-text p {
+  margin-bottom: 0px;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 768px) {
+  .word-carousel .item {
+    width : 100%;
+    display: table;
+    height: 160px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .welcome-text-wrapper .item h1 {
+    font-size: 44px;
+    display:table-cell; vertical-align:middle;
+    line-height: 1.2;
+    height: 160px;
+    
+  }
+ 
+  .top-welcome-text p {
+  
+    font-size: 13px;
+  
+  }
+}
+/* #endregion */
+
+/* #region Navbar MOBILE & TABLET */
+@media only screen and (max-width: 992px) {
+.top-header {
+  display: none;
+}
+.carousel {
+  margin-top: 48px;
+}
+.navbar {
+  background-color: rgba(26, 26, 26, 0)!important;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  
+}
+.navbar-dark .navbar-toggler {
+  color: transparent;
+}
+.navbar-toggler {
+  border-color: transparent!important;
+}
+.navbar-nav li {
+  border-bottom: solid 1px #333;
+  
+  margin-right: 2rem;
+  margin-left: 2rem;
+
+}
+.navbar-nav {
+  height: 100%;
+    height: 90vh;
+    overflow-y:scroll;
+    background-color: rgba(26, 26, 26, 1)!important;
+}
+.navbar-nav a {
+  color: white!important;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  line-height: 3;
+}
+
+.dropdown-toggle::after {
+  position: absolute;
+  right: 2px;
+  width: .8em;
+  height: .8em;
+  content: "";
+  border: .3em solid;
+  border-width: 0 .15em .15em 0;
+  transform: rotateZ(45deg);
+  margin-top: 10px;
+  
+}
+.dropdown-menu {
+  background-color: inherit;
+  border: none;
+}
+
+.dropdown-menu li {
+color: inherit;
+}
+.dropdown-item:hover {
+  background-color:inherit;
+
+}
+
+}
+
+@media only screen and (max-width: 1200px) {
+.navbar-brand {
+  display: none;
+}
+}
+@media only screen and (max-width: 992px) {
+  .navbar-brand {
+    display:unset;
+  }
+
+}
+
+/* #endregion */
+
+/* #region Navbar DESKTOP */
+@media only screen and (min-width: 992px) {
+  .navbar, .top-header {
+    background-color:  rgba(0, 0, 0, 0.4)!important;
+
+  }
+  .navbar-sticky--active {
+    background-color: rgba(0, 0, 0, 1);
+   }
+  .navbar .navbar-brand {
+    font-weight: bolder;
+    font-size: 1.3em;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .navbar .navbar-nav {
+    margin: 0 auto;
+  }
+  .navbar .nav-item a{
+    color: white!important;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  line-height: 3;
+  white-space: nowrap;
+
+  }
+  .navbar .dropdown-menu {
+    background-color: rgb(0, 0, 0);
+margin-top:7px;
+  }
+  
+
+  .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  
+  }
+  .navbar-nav .nav-item .nav-link:hover, .navbar-nav .nav-item .nav-link.show {
+text-decoration: underline;
+  }
+
+
+  .navbar-expand-lg .navbar {
+    background-color: black;
+  }
+}
+
+.navbar.solid {
+  background-color: rgb(26, 26, 26, 1)!important;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px rgb(0, 0, 0);
+}
+
+/* #endregion */
+
+/* #region Stats Section */
+
+#stats {
+  padding-top:90px;
+  padding-bottom: 90px;
+  width: 100%;
+  color: white;
+  justify-content:space-between!important;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  
+  
+}
+.stat span {
+  text-transform: uppercase;
+}
+.stats-icon {
+height: 70px;
+width: 70px;
+  margin-bottom: 10px;
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+}
+.bold-number {
+  font-size: 60px;
+  line-height: 1;
+  
+}
+
+@media only screen and (max-width: 992px) {
+  #stats-section .container {
+    padding-right: 0;
+    padding-left: 0;
+
+  }
+#stats-section .row {
+  --bs-gutter-x: 0;
+}
+}
+@media only screen and (max-width: 800px) {
+
+  .stat {
+
+    width: 50%;
+    margin-bottom: 70px;
+  }
+#stats-section .row {
+  --bs-gutter-x: 0!important;
+}
+#last-stat, #third-stat {
+  margin-bottom: 0;
+}
+
+
+#stats-section {
+background-position: bottom;
+}
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  .stat {
+
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+
+  .stats-icon {
+    height: 65px;
+    width: 65px;
+    }
+    .bold-number {
+      font-size: 55px;
+      line-height: 1;
+      
+    }
+
+#stats-section .row {
+  --bs-gutter-x: 0!important;
+}
+#last-stat {
+  margin-bottom: 0;
+}
+#third-stat {
+  margin-bottom: 70px;
+}
+}
+
+/* #endregion */
+
+/* #region Metals Section */
+#metals h3 {
+
+  line-height: 20px;
+    font-size: 16px;
+font-weight: bold;
+    white-space: nowrap;
+}
+#metals .flex img {
+  height: 35px;
+  margin-right: 6px;
+  position: relative; 
+  bottom: 5px;
+}
+#metals-text-1 {
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 768px) {
+#metals-text-2, #metals-text-3, #metals-text-4 {
+  margin-bottom: 20px;
+}
+
+}
+/* #endregion */
+
+/* #region Metals Gallery */
+.aurubis {
+  background-image: url(../images/q&m-dings-nordic-brown-light-what-do-you-think.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+.falzonal {
+  background-image: url(../images/falzonal-gold-l.jpg);
+  background-size: cover;
+background-position: center;
+}
+.greencoat {
+  background-image: url(../images/aclass-west-malling-plx-anthracite-good.JPG);
+  background-size: cover;
+background-position: bottom;
+}
+.kalzip {
+  background-image: url(../images/kalzip-50333-alupluszinc-2.jpg);
+  background-size: cover;
+background-position: bottom;
+}
+.nedzink {
+  background-image: url(../images/e&a-stumperlowe-nedzink-noir-good.JPG);
+  background-size: cover;
+background-position: bottom;
+}
+.prefa {
+  background-image: url(../images/prefa_prefalz_2.jpg);
+  background-size: cover;
+background-position: center;
+}
+
+.roofinox {
+  background-image: url(../images/roofinox.jpg);
+  background-size: cover;
+background-position: center;
+}
+.traditional-textures {
+  background-image: url(../images/traditional-textures-avonside-clock-tower-inca\ gold-good.jpg);
+  background-size: cover;
+background-position: top;
+}
+.zintek {
+  background-image: url(../images/hl-bruntsfield-zintek-blue-goodish.jpg);
+  background-size: cover;
+background-position: top;
+}
+.zm-silesia {
+  background-image: url(../images/proclad-western-harbour-preaged-zinc-temp-image.JPG);
+  background-size: cover;
+background-position: center;
+}
+
+.metal-info {
+  display: block;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+color: white;
+font-size: 20px;
+font-weight: 1;
+padding-left: 10px;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.267);
+}
+
+.metal-info:hover {
+  opacity: 1;
+}
+.carousel-content {
+  height: 350px;
+  transition: transform 0.4s;
+}
+
+#metals .owl-theme .owl-nav {
+  margin-top: 0px!important;
+}
+
+.carousel-content:hover {
+  transform: scale(1.1, 1.1);
+  width: inherit;
+}
+
+.metal-logo {
+  width: 70%!important;
+  margin-left: 15%;
+  margin-right: 15%;
+  position: absolute;              
+   top: 50%;                       
+   transform: translate(0, -50%);
+}
+
+#metals .owl-carousel {
+  position:relative;
+}
+
+#metals .owl-prev, #metals .owl-next {
+  position:absolute;
+}
+
+#metals .owl-next span {
+  height: 70px!important;
+  border: none;
+}
+
+#metals .owl-carousel .owl-nav button.owl-next, #metals .owl-carousel .owl-nav button.owl-prev, #metals.owl-carousel button.owl-dot {
+  background-color: white!important;
+  border: none;
+  padding: 0!important;
+  font-size: 50px!important;
+  line-height: 70px!important;
+  width: 70px;
+ top: 310px;
+
+}
+
+#metals .owl-carousel .owl-nav button.owl-next:hover, #metals .owl-carousel .owl-nav button.owl-prev:hover{
+  background-color:rgb(63, 63, 63)!important;
+}
+
+#metals .owl-nav button:hover {
+  background-color:rgb(0, 0, 1)
+}
+
+#metals .owl-prev {
+  left:10px;
+}
+
+#metals .owl-next {
+  right: 10px;
+}
+
+#metals-gallery {
+  margin-top: 50px;
+  display: flex;
+  width: 100%!important;
+}
+.gallery-img {
+  width: 700px;
+  height: 400px;
+}
+#mobile-metals-gallery {
+  display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+#metals-gallery {
+  display: none;
+}
+#mobile-metals-gallery {
+  display: unset;
+}
+#manufacturer-list {
+  display: none;
+}
+.custom-container-mobile {
+  padding: 0 5px 0 5px;
+}
+.carousel-content {
+  height: unset;
+}
+
+.aurubis {
+  height: 300px;
+}
+.falzonal {
+  height: 250px;
+}
+.greencoat {
+  height: 300px;
+}
+.kalzip {
+  height: 300px;
+}
+.nedzink {
+  height: 300px;
+}
+.prefa {
+  height: 300px;
+}
+
+.roofinox {
+  height: 300px;
+}
+.traditional-textures {
+  height: 300px;
+}
+.zintek {
+  height: 300px;
+  background-position: bottom;
+}
+.zm-silesia {
+  height: 340px;
+  background-position: left;
+}
+
+
+
+}
+
+
+/* #endregion */
+
+/* #region Systems Gallery DESKTOP */
+ @media only screen and (min-width: 992px) {
+  .systems-gallery {
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: 50% 50%;
+  gap:5px;
+    grid-template-areas: "reveal-panels standing-seam shingles"
+    " snaplock batten-roll shingles";
+  width: 100%;
+    height: 700px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+  }
+
+.systems-img-1 {
+  background-image: url(../images/systems/varla-york-explore-xxx-reveal-panel-2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.systems-img-2 {
+  background-image: url(../images/systems/varla-talbot-st-xxx-standing-seam.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+
+.systems-img-3 {
+  background-image: url(../images/systems/amr-manscombe-road-brass-shingles.jpg);
+  background-size: cover;
+  background-position: center;
+
+  height: 100%;
+}
+
+.shingles {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+
+.systems-img-4 {
+  background-image: url(../images/systems/hispec-ral-7016-snaplock.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+
+.systems-img-5 {
+  background-image: url(../images/systems/batten-roll-homepage.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+}
+/* #endregion */
+
+/* #region Systems Gallery TABLET */
+@media only screen and (max-width: 992px) {
+  .systems-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "reveal-panels standing-seam"
+    " shingles snaplock"
+    "batten-roll batten roll";
+  width: 100%;
+    height: 1000px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+  }
+
+.systems-img-1 {
+  background-image: url(../images/systems/varla-york-explore-xxx-reveal-panel-2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.systems-img-2 {
+  background-image: url(../images/systems/varla-talbot-st-xxx-standing-seam.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+
+.systems-img-3 {
+  background-image: url(../images/systems/amr-manscombe-road-brass-shingles.jpg);
+  background-size: cover;
+  background-position: center;
+
+  height: 100%;
+}
+
+.batten-roll {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+
+.systems-img-4 {
+  background-image: url(../images/systems/hispec-ral-7016-snaplock.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+
+.systems-img-5 {
+  background-image: url(../images/systems/batten-roll-homepage.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+}
+/* #endregion */
+
+/* #region Systems Gallery MOBILE*/
+@media only screen and (max-width: 768px) {
+  .systems-gallery {
+display: flex;
+flex-direction: column;
+height: unset;
+gap: 0px;
+padding-bottom: 0px;
+  }
+  .reveal-panels {
+height: 300px;
+  }
+  .standing-seam {
+   height: 500px;
+  }
+  .shingles {
+    height: 630px;
+  }
+  .snaplock {
+    height: 340px;
+  }
+  .batten-roll {
+    height: 400px;
+    margin-bottom: 0px;
+}
+}
+/* #endregion */
+
+/* #region Systems Section */
+.systems-info {
+  display: block;
+  padding-top: 25%;
+height: 100%;
+}
+.systems-img-1:hover, .systems-img-2:hover, .systems-img-3:hover, .systems-img-4:hover, .systems-img-5:hover{
+  transform: scale(1.1, 1.1);
+  transition: transform 0.4s;
+}
+/* #endregion */
+
+/* #region More Sections */
+.more-section h1 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  display: block;
+  white-space: nowrap;
+ 
+  font-weight:bold;
+}
+.more-section p {
+  display: block;
+
+ 
+}
+.more-section a {
+  display: block;
+}
+
+
+
+.more-img {
+  width:250px;
+  height: 250px;
+  border-radius: 250px;
+
+}
+.more-section {
+  font-size: 13px;
+  text-align: center;
+}
+.more-section .more-button {
+ left: 75px;
+ right: 75px;
+ margin-left: auto;
+ margin-right: auto;
+  margin-top: 0px!important;
+}
+
+
+
+.border-line {
+  border-right:solid 1px #d3d3d3;
+}
+
+
+
+.more-img:hover {
+  transform: scale(1.04, 1.04);
+  transition: transform 0.4s;
+}
+
+.more-hide-overflow {
+  width: 250px;
+  height: 250px;
+  margin-left: auto!important;
+  margin-right: auto!important;
+  overflow: hidden;
+  border-radius: 250px;
+}
+.more-text {
+  padding: 20px 0px 0 0px;
+width: 250px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.more-section .row>* {
+  padding-right: 0px!important;
+  padding-left:0px!important;
+}
+
+@media only screen and (max-width: 1199px) {
+.more-section .flex-item {
+  margin-bottom: 60px;
+}
+.more-text {
+  margin-top: 0px;
+}
+.border-line {
+  border-color: transparent;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.more-text {
+  width: 350px;
+}
+}
+/* #endregion */
+
+/* #region Rainwater Section */
+
+
+#rws-gallery .hide-overflow {
+height: unset;
+margin-bottom: 0px;
+}
+
+.rws-link {
+  text-decoration: none;
+display: block;
+margin-bottom: 5px;
+color: #595959;
+}
+.rws-link:hover {
+  color: #595959;
+}
+
+.img-height {
+ height: 350px;
+}
+#greencoat-rws-img {
+  background-image: url(../images/greencoat-rainwater-system.JPG);
+  background-size: cover;
+background-position: center;
+}
+
+
+#zinc-rws-img {
+background-image: url(../images/zinc-rainwater-system.JPG);
+background-size: cover;
+
+}
+
+
+#ss-rws-img {
+  background-image: url(../images/stainess-steel-rainwater-system.jpg);
+  background-size: cover;
+background-position: right;
+}
+
+#copper-rws-img {
+  background-image: url(../images/copper-rainwater-system.JPG);
+  background-size: cover;
+  background-position: bottom;
+ 
+}
+
+.rws-img:hover{
+cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition: transform 0.4s;
+
+}
+.rws-text {
+ 
+display: block;
+
+  padding: 15px 0 15px 0;
+
+}
+
+.rws-text h2{
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+.rws-text p {
+  font-size: 13px;
+}
+/* #endregion */
+  
+/* #region Contact Form */
+#contact-form .form-label {
+  display: none;
+}
+#contact-form input, #message-input {
+  border-radius: 0px;
+  font-size: 12px;
+  line-height: 3;
+  color: white;
+
+}
+.submit {
+ padding: 7px;
+ background: transparent;
+}
+
+label {
+  width: 100%;}
+}
+
+.mb-3 {
+  margin-bottom: 10px!important;
+}
+/* #endregion */
+
+/* #region Socials Section */
+#instagram-feed{ 
+  background-color:#ffffff;
+}
+.band {
+  height: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#ig-header {
+  height: 90px;
+}
+
+#our-socials h1 {
+  display: inline-block;
+  margin-right: 70px;
+
+}
+#our-socials a {
+  text-decoration: none!important;
+}
+.socials-icons {
+  height: 100px;
+box-shadow: rgb(56, 56, 56) 2px 2px 5px;
+border-radius: 15px;
+}
+.socials-icons:hover {
+  position: relative;
+  bottom: 3px;
+  right: 3px;
+  box-shadow: rgb(0, 0, 0) 2px 2px 5px;
+}
+  
+.ig-text {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+text-align: center;
+color: black;
+}
+
+#instagram-feed .more-button {
+  border-color: rgb(54, 54, 54);
+  color: rgb(54, 54, 54);
+}
+#instagram-feed .more-button:hover {
+ color: white;
+
+}
+.vertical-align {
+  line-height: 90px;
+}
+
+#our-socials {
+  text-align: center;
+ padding-top: 60px;
+ padding-bottom: 60px;
+}
+
+#ig-widget-mobile {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  #ig-widget-desktop {
+    display: none;
+  }
+  
+  #ig-widget-mobile {
+    display: unset;
+  }
+
+}
+@media only screen and (max-width: 768px) {
+#instagram, #youtube {
+float: right;
+margin-bottom: 30px;
+margin-right: 5px;
+}
+#facebook-messenger, #linkedin {
+  float: left;
+  margin-bottom: 30px;
+  margin-left: 5px;
+}
+
+
+}
+/* #endregion */
+
+/* #region Map */
+
+.map-link .st0 {
+  transition: 0.5s;
+  z-index:9999;
+}
+
+.map-link:hover .st0 {
+  fill: #000E2F;
+  transition: 0.5s;
+  z-index:9999;
+}
+.map-link:hover .st1 {
+  fill: #000E2F;
+  transition: 0.5s;
+}
+.map-link:hover .st2 {
+  fill: #000E2F;
+  transition: 0.5s;
+}
+.map-link:hover .st3 {
+  fill: #000E2F;
+  transition: 0.5s;
+}
+
+/* Text Labels */
+
+.labels {
+    fill: #fff;
+    font-family: Arial;
+    font-size: 6px;
+    line-height: 12px;
+    font-weight: normal;
+    z-index: 1;
+    display: block;
+}
+.map-link {
+  text-decoration: none;
+}
+
+.map {
+ height: 1000px;
+  width: 100%;
+}
+.map-2 {
+
+}
+#locations svg {
+height:550px;
+}
+
+
+#locations svg path {
+  cursor: pointer;
+}
+/* Wales */
+#GB-UKL {
+  fill: green;
+}
+
+/* North-West */
+#GB-UKD {
+  fill: green;
+
+}
+#GB-UKD:hover {
+  fill: red;
+ cursor: pointer;
+
+}
+/* #endregion */
+
+/* #region Map */
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#footer-logo {
+  height: 100px;
+  margin-top: 50px;
+}
+footer h4 {
+  margin-top: 30px;
+}
+footer ul {
+margin-top:0px!important;
+margin-bottom:0px;
+padding-left:0px;
+list-style: none;
+}
+footer li {
+  margin-top: 0px;
+ padding-top: 0px;
+}
+/* #endregion */
