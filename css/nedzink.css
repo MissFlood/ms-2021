@@ -206,10 +206,6 @@ font-size: 30px;
 }
 }
 
-#nedzink-header-logo {
-    width: 300px;
-}
-
 
 #nz-naturel-banner {
     background-image: url(../images/jack-house-nedzink-naturel-good.JPG);
@@ -371,7 +367,7 @@ flex-wrap: wrap;
 
 /* #region Downloads Section */
 .downloads-section {
-  padding: 70px 0 60px 0;
+  padding: 60px 0 50px 0;
 
 }
 
@@ -445,18 +441,30 @@ figcaption {
   
   }
   .downloads-section {
-    padding-top: 40px;
-    padding-bottom: 50px;
+    padding-top: 0px;
+    padding-bottom: 30px;
   }
   .downloads-section h2 {
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
 }
 /* #endregion */
 
 /* #region Tabs */
-
+.manufacturer-logo {
+  position: absolute;
+  right: 0;
+  
+  }
+  .manufacturer-logo-2 {
+    display: none;
+  }
+  #nedzink-logo {
+    width: 300px;
+    margin-top: -20px;
+    margin-right: -16px;
+  }
 .tab-pane h2 {
 margin: 20px 0 20px 0;
 }
@@ -473,11 +481,49 @@ margin: 20px 0 20px 0;
   width: 100%;
 
 }
+.manufacturer-logo {
+  display: none;
+}
+.manufacturer-logo-2 {
+  display: block;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
   }
-.manufacturer-video, .pill-2-img, .pill-3-img {
-  
+  .pill-2-img-container {
+   width: 40%;
+   height: 470px;
+    margin-right: 20px;
+  }
+.pill-2-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 
+}
+.p-flexx {
+  width: 50%;
+}
+.flexx {
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .pill-2-img-container {
+    width: 100%;
+    height: 300px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+   }
+   .flexx {
+  flex-direction: column-reverse;
   }
+  .p-flexx {
+    width: 100%;
+  }
+
+}
+
  .pill-3-img{
     height: 320px;
   }
@@ -529,6 +575,7 @@ margin: 20px 0 20px 0;
   .tabs-section {
 padding-top: 2em;
 padding-bottom: 5em;
+position: relative;
   }
  
   .tabs-section .sticky-top {
@@ -555,7 +602,7 @@ text-align: center;
      
   .tabs-section {
     padding-top:0em;
-    padding-bottom: 5em;
+    padding-bottom: 2em;
       }
 
       .tabs-section .nav-pills {
@@ -624,14 +671,14 @@ border-right: solid 1px;
 }
 
 .finishes {
-padding: 70px 0 70px 0;
+padding: 60px 0 60px 0;
 }
 @media only screen and (max-width: 768px) {
 .finishes {
-  padding: 40px 0 100px 0;
+  padding: 0px 0 70px 0;
 }
 .finishes h2 {
-  padding: 30px 0 10px 0
+  padding: 50px 0 0 0
 }
   }
 .finishes-block .nav-link {
@@ -716,27 +763,51 @@ font-size: 13px;
 
 
 /* #region Form Section */
-#nedzink-contact-form {
+.contact-form {
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
-#nedzink-form label {
+.contact-form label {
   margin-bottom: 10px;
 }
-#nedzink-form textarea, #nedzink-form input, #nedzink-form select {
+.contact-form textarea, .contact-form input, .contact-form select {
   color: #383838;
   border-radius: 0px;
     font-size: 12px;
-    line-height: 3;
+    line-height: 2;
       border-color: #b8b8b8;
-    outline: none;
-    box-shadow:none;
-  
+    outline: none!important;
+    box-shadow:none!important;
 }
+.contact-form input, .contact-form select {
+  height: 53px;
+}
+.contact-form textarea {
+  height: 130px;
+}
+input[type='checkbox'] {
+ height: unset;
+  }
+  input[type='file'] {
+   line-height: 3.4;
+     }
+  
+
 @media only screen and (max-width: 768px) {
 
-#nedzink-form textarea, #nedzink-form input, #nedzink-form select {
-line-height: 2.5;
+.contact-form textarea, .contact-form input, .contact-form select {
+line-height: 2;
+}
+input[type='file'] {
+  line-height: 3.4;
+    }
+.contact-form {
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+.contact-form h2 {
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 }
 
@@ -818,10 +889,7 @@ margin-bottom: 5px;
     flex-wrap: wrap;
   
   }
-  #nedzink-brochure-request p{
 
-  
-  }
 
 #nedzink-brochure-request label {
 width: 50%;

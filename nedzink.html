@@ -187,8 +187,7 @@
 <div class="page-header-img" id="nedzink-page-header">
   <div class="container">
     <div class="page-header">
-   <img src="images/Logos/nedzink-logo.png" alt="NedZink Logo" class="page-title" id="nedzink-header-logo">
-
+<div>hi</div>
    <div class="crumb">
     
     <li class="back-link">
@@ -230,6 +229,7 @@
 
 <!-- About Tabs -->
 <section id="nedzink-tabs-section" class="container tabs-section">
+  <img data-aos="fade-left" data-aos-duration="1000" src="images/nedzink-clear-logo.png" alt="NedZink Logo" class="manufacturer-logo" id="nedzink-logo">
 
   <ul class="sticky-top nav nav-pills mb-3" id="pills-tab" role="tablist">
     <li class="nav-item">
@@ -245,7 +245,7 @@
     </li>
   </ul>
 
-  <div class="tab-content" id="pills-tabContent">
+  <div style="overflow-x:hidden;" class="tab-content" id="pills-tabContent">
     <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
       <section style="overflow-x:hidden; overflow-y: hidden;" id="about-nedzink" class="white-theme">
   
@@ -279,15 +279,21 @@
         <p>A roof or façade with a zinc covering, fitted in accordance with the applicable design and installation guidelines (BRL 5212), does not pose a fire risk in accordance with NEN 6063. Zinc products fall under Euroclass A1 of NEN-EN 13501-1. Euroclass A1 is the “non-combustible” class.
         </p>
         </div>
+
     </div>
 </section>
  </div>
     <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
-      <div class="row">
+
         <div id="pill-2-text" class="">
-        
+  <div class="flexx">
+          <div class="pill-2-img-container">
+          <img class="pill-2-img" src="images//phillips-nedzink-neo.jpeg">
+          </div>
+          <div class="p-flexx">
           <h3 style="margin-top: 0px;">NedZink Quality Assurance</h3>
-          <p>NedZink produces titanium zinc according to EN 988 & ASTM B69, an alloy based on electrolytically cleaned zinc with a purity of min. 99.995 % Zn (Z1 according to EN 1179) with small additions of the alloy elements copper, titanium and aluminium.
+          <p>       
+            NedZink produces titanium zinc according to EN 988 & ASTM B69, an alloy based on electrolytically cleaned zinc with a purity of min. 99.995 % Zn (Z1 according to EN 1179) with small additions of the alloy elements copper, titanium and aluminium.
           </p>
           <p>In the KOMO product certificate and the product certificate from Lloyd’s Register, Industrial Quality Scheme for Product Certification by Surveillance of Quality Systems (approval No. QIS 122) the following quality indicators are determined:
           <ul>
@@ -297,17 +303,16 @@
           </ul>
           <p>Compliance with the set material properties is checked at regular intervals (several times a year) by an independent and neutral control body, Lloyd’s Register. This product certificate and the ISO 9001:2015 certificate for the quality management system at NedZink assure a constant and uniform high quality, meeting our own standards and far exceeding NEN-EN 988. The materials are provided with a continuous stamp with a mark according to the provisions of NEN-EN 988,
           </p>
-          <h3>NedZink and the Environment</h3>
+        </div>
+      </div>
+          <h3 style="margin-top: 0;">NedZink and the Environment</h3>
           
           <p>Zinc is one of the most reliable metals that has been used as a building material for centuries. This includes zinc gutters, rainwater drainage systems, roof coverings and wall claddings. With a lifespan of 75+ years, zinc is not only an aesthetic choice but nowadays also a sustainable choice. In addition to a long service life, more than 95% is collected and recycled again after use. It therefore answers the circular economy. There are few building materials whose overall environmental balance is as positive as for zinc.
           </p>
           <p>Zinc is not only appreciated because of its unique appearance, the metal is also very functional: it ensures that rainwater is drained reliably.
           </p>
-          
-    </div>
-  
-      <img class="pill-2-img" src="images//nedzink-new-factory.jpg">
-    </div>
+
+</div>
   </div>
 
     <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
@@ -331,6 +336,7 @@
   </section>
   
     </div>
+    <img data-aos="fade-left" data-aos-duration="1000" src="images/nedzink-clear-logo.png" alt="NedZink Logo" class="manufacturer-logo-2" id="nedzink-logo-2">
 
   </div>
 </section>
@@ -968,13 +974,20 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
               <input type="text" id="nedzink-surname" class="form-control" name="surname" placeholder="Surname" required>
             </label>
     </div>
-   
-            <label for="nedzink-number">
+    <label for="company-name">
+      <input type="text" id="company-name" class="form-control" name="company-name" placeholder="Company Name">
+    </label>
+   <div class="flex">
+            <label style="margin-right: 5px; width: 40%;" for="nedzink-number">
               <input type="tel" id="nedzink-number" class="form-control" name="number" placeholder="Number" required>
             </label>
-            <label for="nedzink-email">
+            <label style="margin-left: 5px; width: 60%;" for="nedzink-email">
               <input type="text" id="nedzink-email" class="form-control" name="email" placeholder="Email" required>
             </label>
+      
+          </div>
+
+         
 
             <label for="nedzink-project-status">
             <select class="form-select" aria-label="Default select" name="project-status" id="nedzink-project-status">
@@ -1000,7 +1013,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
   <input type="file" id="upload-nedzink-drawings" name="drawings" class="form-control">
 </label>
 <label for="nedzink-message">
-  <textarea class="form-control" rows="3" id="nedzink-message" name="message" placeholder="Message"></textarea>
+  <textarea class="form-control" rows="3" id="nedzink-message" name="message" placeholder="Message" required></textarea>
 </label>
 </div>
 
