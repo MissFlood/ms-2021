@@ -779,15 +779,13 @@ font-size: 13px;
     outline: none!important;
     box-shadow:none!important;
 }
-.contact-form input, .contact-form select {
+.contact-form input[type='text'], .contact-form input[type='tel'], .contact-form select {
   height: 53px;
 }
 .contact-form textarea {
   height: 130px;
 }
-input[type='checkbox'] {
- height: unset;
-  }
+
   input[type='file'] {
    line-height: 3.4;
      }
