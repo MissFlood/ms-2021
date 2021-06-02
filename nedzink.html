@@ -21,6 +21,10 @@
 
 <!-- Animations CSS -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -203,7 +207,7 @@
 <div></div>
 
   <div>
-  <h1 data-aos="fade-right" data-aos-duration="1000"> NedZink</h1>
+  <h1 data-aos="fade-left" data-aos-duration="1000"> NedZink</h1>
   <div data-aos="fade-right" data-aos-duration="1000" class="top-welcome-text"><p>The highest quality Dutch zinc.</p></div>
 </div>
 
@@ -237,15 +241,17 @@
 
   <div class="tab-content" id="pills-tabContent">
     <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
-      <section style="overflow-x:hidden;" id="about-nedzink" class="white-theme">
+      <section style="overflow-x:hidden; overflow-y: hidden;" id="about-nedzink" class="white-theme">
   
-        <div data-aos="fade-left" data-aos-duration="1000">
+        <div data-aos="fade-up" data-aos-duration="1000">
       
             <video class="manufacturer-video" id="nedzink-video" controls>
-              <source src="/videos/nedzink.mp4" type="video/mp4">
+              <source src="videos/nedzink.mp4" type="video/mp4">
             </video>
      
         <div id="pill-1-text">
+
+  
           <h3 style="margin-top: 15px;">More than 100 years experience, quality and flexibility.</h3>
 
           <p>    
@@ -938,13 +944,13 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
 <!-- Contact Form -->
 <section id="nedzink-contact-form" class="white-theme contact-form">
   <div class="section-padding">
-    <div style="overflow-x:hidden" class="container">
+    <div style="overflow-x:hidden, overflow-y: hidden;" class="container">
       
-      <h2 data-aos="fade-up" data-aos-duration="1000">Get a Free Quote, Brochures & Samples!</h2>
-      <form id="nedzink-form" method="post" action="https://formspree.io/f/myylwzqn" enctype="multipart/form-data">
+      <h2 data-aos="fade-down" data-aos-duration="1000">Get a Free Quote, Brochures & Samples!</h2>
+      <form data-aos="fade-up" data-aos-duration="1000" id="nedzink-form" method="post" action="https://formspree.io/f/myylwzqn" enctype="multipart/form-data">
 
       <div class="row">
-        <div data-aos="fade-right" data-aos-duration="1000" class="col-md-6">
+        <div class="col-md-6">
             
        <div class="flex">
             <label style="margin-right: 5px;" for="nedzink-first-name">
@@ -992,7 +998,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
 </label>
 </div>
 
-<div data-aos="fade-left" data-aos-duration="1000" class="col-md-6 order-samples">
+<div class="col-md-6 order-samples">
   <p class="p-brochure" style="font-weight: bold; margin-bottom: 5px;">Select brochures:</p>
   <div id="nedzink-brochure-request">
   <label for="nedzink-checkbox-brochure-1" class="form-check-label">

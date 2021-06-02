@@ -460,8 +460,8 @@ margin: 20px 0 20px 0;
   float: right;
   margin-left: 10px;
   margin-bottom: 10px;
-  width: 45%;
-  max-height: 300px;
+  width: 550px;
+
 
 }
 @media only screen and (max-width: 992px) {
@@ -471,7 +471,7 @@ margin: 20px 0 20px 0;
 }
   }
 .manufacturer-video, .pill-2-img, .pill-3-img {
-  object-fit: cover;
+  
 
   }
  .pill-3-img{
