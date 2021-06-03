@@ -503,9 +503,15 @@ background-size: cover; /* Resize the background image to cover the entire conta
   margin-left: 2rem;
 
 }
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+.navbar-collapse {
+  height: 100vh;
+}
 .navbar-nav {
-  height: 100%;
-    height: 100vh;
+    height: 90vh;
     overflow-y:scroll;
     background-color: rgba(26, 26, 26, 1)!important;
 }

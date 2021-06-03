@@ -802,6 +802,9 @@ input[type='file'] {
   padding-top: 50px;
   padding-bottom: 20px;
 }
+.contact-form input[type='text'], .contact-form input[type='tel'], .contact-form select {
+  height: 44px;
+}
 }
 
 .order-samples {
