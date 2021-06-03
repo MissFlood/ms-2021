@@ -12,6 +12,12 @@ body {
   line-height: 2.3;
   color: #595959;
  overflow-x:hidden;
+ min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
 }
 
 @media only screen and (max-width: 768px) {
@@ -508,11 +514,12 @@ background-size: cover; /* Resize the background image to cover the entire conta
   background: transparent;  /* Optional: just make scrollbar invisible */
 }
 .navbar-collapse {
-  height: 100vh;
+  overflow-y:scroll;
 }
 .navbar-nav {
-    height: 80vh;
-    overflow-y:scroll;
+height: 100vh;
+min-height: -webkit-fill-available;    
+  overflow-y:scroll;
     background-color: rgba(26, 26, 26, 1)!important;
 }
 .navbar-nav a {
