@@ -55,14 +55,14 @@
 
 </header>
 
-<nav class="navbar navbar-default sticky-top navbar-expand-lg navbar-dark" aria-label="Fifth navbar example">
+<nav id="navElm" class="navbar navbar-default sticky-top navbar-expand-lg navbar-dark" aria-label="Fifth navbar example">
   
   <div class="container-fluid">
       <a class="navbar-brand" href="#">Metal Solutions</a>
       <button class="navbar-toggler" id="main-navigation-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+</div>
       <div class="collapse navbar-collapse" id="navbarsExample05">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item active">
@@ -226,7 +226,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link tab" id="pills-profile-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">Quality & the Environment</a>
+      <a class="nav-link tab" id="pills-profile-tab" data-toggle="pill" onclick="scrollToFunction('#pills-2'); return false;" role="tab" aria-controls="pills-2" aria-selected="false">Quality & the Environment</a>
     </li>
     <li class="nav-item">
       <a class="nav-link tab" id="pills-contact-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">Qualified Installer Scheme</a>
@@ -1072,7 +1072,7 @@ Brochure 1</label>
        
           
 </div>
-              <button class="submit more-button" type="submit">Submit</button>
+              <button class="submit more-button" id="submitBtn" type="submit">Submit</button>
             </form>
   
      </section>
@@ -1236,6 +1236,51 @@ Brochure 1</label>
 
 <script>
   $(document).ready(function() {
+          // submit check
+          var sumbitObj = document.getElementById("submitBtn");
+          sumbitObj.addEventListener('click', function(e) {
+            console.log('submit +++');
+            var checkBoxList =  document.getElementsByClassName("checkbox");
+            var checkBoxFlag = false;
+            var checkBoxCnt = 0;
+            for (let index = 0; index < checkBoxList.length; index++) {
+              if (checkBoxList[index].checked) {
+                checkBoxCnt = checkBoxCnt + 1;
+              }
+            }
+            checkBoxFlag = checkBoxCnt > 0 ? true : false;
+            var addressList = document.getElementsByClassName("form-control address");
+            if (checkBoxFlag) {
+              console.log('check box flag true case +++', checkBoxFlag);
+              for (let index = 0; index < addressList.length; index++) {
+                addressList[index].required = true;
+              }
+            } else {
+              for (let index = 0; index < addressList.length; index++) {
+                addressList[index].required = true;
+              }
+            }
+          })
+          var showFlag = false;
+          // get navbar div element
+          var toggleBtn = document.getElementById("main-navigation-toggle");
+          toggleBtn.addEventListener('click', function(e) {
+            console.log('toggle button click +++');
+            showFlag = !showFlag;
+            if (showFlag) {
+              console.log('show flag true case +++', showFlag);
+              document.body.className = "all-loaded nav-open-body";
+              document.getElementById("navElm").className = "navbar navbar-default sticky-top navbar-expand-lg navbar-dark nav-open";
+
+            } else {
+              console.log('show flag false calse ---', showFlag);
+              document.getElementById("navElm").classList.remove = "nav-open";
+              document.body.classList.remove = "nav-open-body";
+              
+              document.getElementById("navElm").className = "navbar navbar-default sticky-top navbar-expand-lg navbar-dark";
+              document.body.className = "all-loaded";
+            }
+          })
           // Transition effect for navbar 
           $(window).scroll(function() {
             // checks if window is scrolled more than 500px, adds/removes solid class
@@ -1261,6 +1306,7 @@ Brochure 1</label>
       mybutton.style.display = "none";
     }
   }
+
   
   // When the user clicks on the button, scroll to the top of the document
   function topFunction() {

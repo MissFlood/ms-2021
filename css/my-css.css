@@ -490,6 +490,7 @@ background-size: cover; /* Resize the background image to cover the entire conta
 .carousel {
   margin-top: 48px;
 }
+
 .navbar {
   background-color: rgba(26, 26, 26, 0)!important;
   padding-top: 0px;
@@ -509,16 +510,13 @@ background-size: cover; /* Resize the background image to cover the entire conta
   margin-left: 2rem;
 
 }
-::-webkit-scrollbar {
-  width: 0;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
-}
+
 .navbar-collapse {
+  height: 100vh;
   overflow-y:scroll;
 }
 .navbar-nav {
-height: 100vh;
-min-height: -webkit-fill-available;    
+height: 80vh;
   overflow-y:scroll;
     background-color: rgba(26, 26, 26, 1)!important;
 }
@@ -556,6 +554,15 @@ color: inherit;
 }
 
 }
+
+.nav-open {
+  background-color: rgb(26, 26, 26)!important;
+}
+
+.nav-open-body {
+  position: fixed;
+}
+
 
 @media only screen and (max-width: 1200px) {
 .navbar-brand {
