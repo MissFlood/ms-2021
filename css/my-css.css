@@ -511,7 +511,7 @@ background-size: cover; /* Resize the background image to cover the entire conta
   height: 100vh;
 }
 .navbar-nav {
-    height: 90vh;
+    height: 80vh;
     overflow-y:scroll;
     background-color: rgba(26, 26, 26, 1)!important;
 }
