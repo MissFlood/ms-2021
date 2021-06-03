@@ -81,27 +81,22 @@ font-style: italic;
     padding-bottom: 20px;
   }
   .scroll-top {
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
-    width: 150px;
-    border-radius: 20px;
-    height: 35px;
-    display: flex;
-
+width: 40px;
+height: 40px;
+bottom: 10px;
+right: 10px;
   }
  .scroll-top:hover {
   background-color: rgb(54, 54, 54);
   filter: unset;
  }
  .scroll-top p {
-margin-top: -32px;
-   color: white;
+display: none;
 
  }
  .scroll-top-icon {
   width: 40px;
-  margin-top: -3px;
+ 
 
  }
 

@@ -128,6 +128,9 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
+    .crumb {
+        display: none;
+    }
     .section-img-left, .section-img-right {
         height: 500px;
         width: 100vw;

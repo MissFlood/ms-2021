@@ -4,13 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
-    <noscript>
-      <style>
-        body {
-          opacity: 1;
-        }
-      </style>
-  </noscript>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     
@@ -27,10 +21,7 @@
 
 <!-- Animations CSS -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -152,8 +143,6 @@
     </div>
   </nav>
 
-  
-  
     
      
  <!-- Banner --> 
@@ -186,9 +175,8 @@
 </div>
 <div class="page-header-img" id="nedzink-page-header">
   <div class="container">
-    <div class="page-header">
-<div>hi</div>
-   <div class="crumb">
+    <div class="page-header2">
+   <div style="float: right;" class="crumb">
     
     <li class="back-link">
       <a href="#"><span>Home</span> /</a>
@@ -213,7 +201,7 @@
 
   <div>
   <h1 data-aos="fade-left" data-aos-duration="1000"> NedZink</h1>
-  <div data-aos="fade-right" data-aos-duration="1000" class="top-welcome-text"><p>The highest quality Dutch zinc.</p></div>
+  <div data-aos="fade-right" data-aos-duration="1000" class="top-welcome-text"><p>The highest quality Dutch zinc</p></div>
 </div>
 
 <div data-aos="fade-left" data-aos-duration="1000" class="banner-buttons">
@@ -1191,79 +1179,75 @@ Brochure 1</label>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Banner Carousel -->
     <script src="owl.carousel.min.js"></script>
-
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:0,
+       nav:true,
+       autoplay:true,
+       autoplayTimeout:4000,
+    autoplayHoverPause:false,
+    animateOut: 'fadeOut',
+        responsive:{
+            0:{
+                items:1,
+                nav:true,
+                loop: true,
+                autoplay:true,
+                dots: false
+            },
+            600:{
+                items:1,
+                loop: true,
+                nav:true,
+                autoplay:true,
+                dots: false
+            },
+            1000:{
+                items:1,
+                nav:true,
+                loop:true,
+                dots:false
+            },
+            1600:{
+                items:1,
+                nav:true,
+                loop:true,
+                dots: true
+              
+            }
+            
+        }
+    })</script>
 <!-- Lightbox Gallery JS -->
 <script src="./js/glightbox.min.js"></script>
-
 <!-- Initialize -->
 <script src="./js/index.js"></script>
 
-
-<script>
-$(document).ready(function() {
-        // Transition effect for navbar 
-        $(window).scroll(function() {
-          // checks if window is scrolled more than 500px, adds/removes solid class
-          if($(this).scrollTop() >150) { 
-              $('.navbar').addClass('solid');
-          } else {
-              $('.navbar').removeClass('solid');
-          }
-        });
-});
-
-</script>
-
-
-    <script src="js/bootstrap.bundle.js"></script>
+<!-- Animations Library-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
 
-  <script>
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:0,
-   nav:true,
-   autoplay:true,
-   autoplayTimeout:4000,
-autoplayHoverPause:false,
-animateOut: 'fadeOut',
-    responsive:{
-        0:{
-            items:1,
-            nav:true,
-            loop: true,
-            autoplay:true,
-            dots: false
-        },
-        600:{
-            items:1,
-            loop: true,
-            nav:true,
-            autoplay:true,
-            dots: false
-        },
-        1000:{
-            items:1,
-            nav:true,
-            loop:true,
-            dots:false
-        },
-        1600:{
-            items:1,
-            nav:true,
-            loop:true,
-            dots: true
-          
-        }
-        
-    }
-})</script>
 
+<script>
+  $(document).ready(function() {
+          // Transition effect for navbar 
+          $(window).scroll(function() {
+            // checks if window is scrolled more than 500px, adds/removes solid class
+            if($(this).scrollTop() >150) { 
+                $('.navbar').addClass('solid');
+            } else {
+                $('.navbar').removeClass('solid');
+            }
+          });
+  });
+  </script>
+<!-- Scroll Top Button -->
 <script>//Get the button:
   mybutton = document.getElementById("scroll-top");
   
@@ -1283,6 +1267,8 @@ animateOut: 'fadeOut',
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }</script>
+
+  <!-- Contact Form Required Fields -->
     <script>
       $('.checkbox').change(function () {
           if($(this).is(':checked')) {
