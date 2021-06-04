@@ -796,7 +796,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
 
 <div id="scroll-top" onclick="topFunction()" class="scroll-top">
   <img class="scroll-top-icon" src="images/up-arrow.png" alt="Scroll to top">
-  <p>To top</p>
+  <div>Top</div>
 </div>
 </section>
 
@@ -957,11 +957,12 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
        <div class="flex">
             <label style="margin-right: 5px;width: calc(50% - 5px);" for="nedzink-first-name">
               <input type="text" id="nedzink-first-name" class="form-control" name="first-name" placeholder="First Name" required>
-            
+              <div class="required-indicator">*</div>
             </label>
 
             <label style="margin-left: 5px;width: calc(50% - 5px);" for="nedzink-surname">
               <input type="text" id="nedzink-surname" class="form-control" name="surname" placeholder="Surname" required>
+              <div class="required-indicator">*</div>
             </label>
     </div>
     <label for="company-name">
@@ -970,9 +971,11 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
    <div class="flex">
             <label style="margin-right: 5px; width: 40%;" for="nedzink-number">
               <input type="tel" id="nedzink-number" class="form-control" name="number" placeholder="Number" required>
+              <div class="required-indicator">*</div>
             </label>
             <label style="margin-left: 5px; width: 60%;" for="nedzink-email">
               <input type="text" id="nedzink-email" class="form-control" name="email" placeholder="Email" required>
+              <div class="required-indicator">*</div>
             </label>
       
           </div>
@@ -980,7 +983,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
          
 
             <label for="nedzink-project-status">
-            <select class="form-select" aria-label="Default select" name="project-status" id="nedzink-project-status" required>
+            <select class="form-select" aria-label="Default select" name="project-status" id="nedzink-project-status">
               <option value="" selected>Project Status?</option>
               <option value="begginning">Beginning</option>
               <option value="middle">Middle</option>
@@ -1004,6 +1007,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
 </label>
 <label for="nedzink-message">
   <textarea class="form-control" rows="3" id="nedzink-message" name="message" placeholder="Message" required></textarea>
+  <div class="required-indicator">*</div>
 </label>
 </div>
 
@@ -1058,16 +1062,20 @@ Brochure 1</label>
 <div class="flex">
     <label style="margin-right: 5px;" for="nedzink-address-1">
       <input type="text" id="nedzink-address-1" class="form-control address" name="address-1" placeholder="Address Line 1">
+      <div class="required-indicator">*</div>
     </label>
     <label style="margin-left: 5px;" for="nedzink-address-2">
       <input type="text" id="nedzink-address-2" class="form-control address" name="address-2" placeholder="Address Line 2">
+      <div class="required-indicator">*</div>
     </label>
 </div>
 <label for="nedzink-city">
   <input type="text" id="nedzink-city" class="form-control address" name="city" placeholder="Town / City">
+  <div class="required-indicator">*</div>
 </label>
 <label for="nedzink-postcode">
   <input type="text" id="nedzink-postcode" class="form-control address" name="postcode" placeholder="Postcode">
+  <div class="required-indicator">*</div>
 </label>
 </div>
 </div>   
@@ -1177,11 +1185,9 @@ Brochure 1</label>
   </div>
   </div>
     </footer>
-   
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="dist/bootstrap-better-nav.js"></script>
@@ -1249,43 +1255,74 @@ Brochure 1</label>
 </script>
 
   <!-- Contact Form Required Fields -->
-  <script>
-    $('.checkbox').change(function () {
-        if($(this).is(':checked')) {
-            $('.address').attr('required');
-        } else {
-            $('.address').removeAttr('required');
-        }
-    });
-    
-      </script>
 <script>
   $(document).ready(function() {
+          // check box change trigger
+          var checkBoxObj = document.querySelectorAll('[type="checkbox"]');
+          var checkBoxFlag = false;
+          var checkBoxCnt = 0;
+          for (let index = 0; index < checkBoxObj.length; index++) {
+            const element = checkBoxObj[index];
+            element.addEventListener('change', function(event) {
+              console.log('check box change trigger +++');
+              checkBoxCnt = 0
+              for (let index = 0; index < checkBoxObj.length; index++) {
+                if (checkBoxObj[index].checked) {
+                  checkBoxCnt = checkBoxCnt + 1;
+                }
+              }
+              checkBoxFlag = checkBoxCnt > 0 ? true : false;
+              var addressList = document.getElementsByClassName("form-control address");
+              if (checkBoxFlag) {
+                console.log('check box flag true case +++', checkBoxFlag);
+                for (let index = 0; index < addressList.length; index++) {
+                  addressList[index].required = true;
+                }
+              } else {
+                for (let index = 0; index < addressList.length; index++) {
+                  addressList[index].required = false;
+                }
+              }
+            })
+          }
+          // checkBoxFlag = checkBoxCnt > 0 ? true : false;
+          // var addressList = document.getElementsByClassName("form-control address");
+          // if (checkBoxFlag) {
+          //   console.log('check box flag true case +++', checkBoxFlag);
+          //   for (let index = 0; index < addressList.length; index++) {
+          //     addressList[index].required = true;
+          //   }
+          // } else {
+          //   for (let index = 0; index < addressList.length; index++) {
+          //     addressList[index].required = true;
+          //   }
+          // }
+          
           // submit check
-          var sumbitObj = document.getElementById("submitBtn");
-          sumbitObj.addEventListener('click', function(e) {
-            console.log('submit +++');
-            var checkBoxList =  document.getElementsByClassName("checkbox");
-            var checkBoxFlag = false;
-            var checkBoxCnt = 0;
-            for (let index = 0; index < checkBoxList.length; index++) {
-              if (checkBoxList[index].checked) {
-                checkBoxCnt = checkBoxCnt + 1;
-              }
-            }
-            checkBoxFlag = checkBoxCnt > 0 ? true : false;
-            var addressList = document.getElementsByClassName("form-control address");
-            if (checkBoxFlag) {
-              console.log('check box flag true case +++', checkBoxFlag);
-              for (let index = 0; index < addressList.length; index++) {
-                addressList[index].required = true;
-              }
-            } else {
-              for (let index = 0; index < addressList.length; index++) {
-                addressList[index].required = true;
-              }
-            }
-          })
+          // var sumbitObj = document.getElementById("submitBtn");
+          // sumbitObj.addEventListener('click', function(e) {
+          //   console.log('submit +++');
+          //   var checkBoxList =  document.getElementsByClassName("checkbox");
+          //   var checkBoxFlag = false;
+          //   var checkBoxCnt = 0;
+          //   for (let index = 0; index < checkBoxList.length; index++) {
+          //     if (checkBoxList[index].checked) {
+          //       checkBoxCnt = checkBoxCnt + 1;
+          //     }
+          //   }
+          //   checkBoxFlag = checkBoxCnt > 0 ? true : false;
+          //   var addressList = document.getElementsByClassName("form-control address");
+          //   if (checkBoxFlag) {
+          //     console.log('check box flag true case +++', checkBoxFlag);
+          //     for (let index = 0; index < addressList.length; index++) {
+          //       addressList[index].required = true;
+          //     }
+          //   } else {
+          //     for (let index = 0; index < addressList.length; index++) {
+          //       addressList[index].required = true;
+          //     }
+          //   }
+          // })
    
           // Transition effect for navbar 
           $(window).scroll(function() {
