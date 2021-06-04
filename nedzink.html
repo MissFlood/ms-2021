@@ -7,6 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="dist/bootstrap-better-nav.css" rel="stylesheet">
+
     
         <!-- Page CSS -->
     <link rel="stylesheet" href="css/my-css.css">
@@ -55,14 +57,14 @@
 
 </header>
 
-<nav id="navElm" class="navbar navbar-default sticky-top navbar-expand-lg navbar-dark" aria-label="Fifth navbar example">
+<nav id="navbar-main" class="navbar navbar-default sticky-top navbar-expand-lg navbar-dark" aria-label="Fifth navbar example">
   
   <div class="container-fluid">
       <a class="navbar-brand" href="#">Metal Solutions</a>
       <button class="navbar-toggler" id="main-navigation-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-</div>
+
       <div class="collapse navbar-collapse" id="navbarsExample05">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item active">
@@ -226,7 +228,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link tab" id="pills-profile-tab" data-toggle="pill" onclick="scrollToFunction('#pills-2'); return false;" role="tab" aria-controls="pills-2" aria-selected="false">Quality & the Environment</a>
+      <a class="nav-link tab" id="pills-profile-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">Quality & the Environment</a>
     </li>
     <li class="nav-item">
       <a class="nav-link tab" id="pills-contact-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">Qualified Installer Scheme</a>
@@ -1176,10 +1178,15 @@ Brochure 1</label>
   </div>
     </footer>
    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="dist/bootstrap-better-nav.js"></script>
+
+
     <!-- Banner Carousel -->
     <script src="owl.carousel.min.js"></script>
     <script>
@@ -1261,26 +1268,7 @@ Brochure 1</label>
               }
             }
           })
-          var showFlag = false;
-          // get navbar div element
-          var toggleBtn = document.getElementById("main-navigation-toggle");
-          toggleBtn.addEventListener('click', function(e) {
-            console.log('toggle button click +++');
-            showFlag = !showFlag;
-            if (showFlag) {
-              console.log('show flag true case +++', showFlag);
-              document.body.className = "all-loaded nav-open-body";
-              document.getElementById("navElm").className = "navbar navbar-default sticky-top navbar-expand-lg navbar-dark nav-open";
-
-            } else {
-              console.log('show flag false calse ---', showFlag);
-              document.getElementById("navElm").classList.remove = "nav-open";
-              document.body.classList.remove = "nav-open-body";
-              
-              document.getElementById("navElm").className = "navbar navbar-default sticky-top navbar-expand-lg navbar-dark";
-              document.body.className = "all-loaded";
-            }
-          })
+   
           // Transition effect for navbar 
           $(window).scroll(function() {
             // checks if window is scrolled more than 500px, adds/removes solid class
