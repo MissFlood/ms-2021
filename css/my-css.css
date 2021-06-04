@@ -496,10 +496,44 @@ background-size: cover; /* Resize the background image to cover the entire conta
     -ms-transform: unset!important;
     -o-transform: unset!important;
   }
-#side-menu .nav-link, .dropdown-item {
+#side-menu .nav-link {
   font-size: 10px;
   font-weight: lighter;
+  color: white!important;
+  text-transform: uppercase;
+  line-height: 3;
+  letter-spacing: 3px;
+  border-bottom: ;
 }  
+
+.dropdown-menu {
+  background-color: inherit;
+  border: none;
+  padding-bottom: 30px;
+}
+.navbar-nav .nav-item {
+  border-bottom: solid 1px #333;
+  
+  margin-right: 1rem;
+  margin-left: 1rem;
+
+}
+.dropdown-item {
+  font-size: 11px;
+  letter-spacing: 2px;
+text-transform: capitalize!important;
+font-weight: lighter!important;
+color:rgba(173, 173, 173);
+
+}
+.dropdown-menu li {
+color: inherit;
+margin-left: 20px;
+}
+.dropdown-item:hover {
+  background-color:inherit;
+
+}
 #side-menu {
   padding: 10px;
   background-color: rgb(26, 26, 26);
@@ -523,13 +557,7 @@ background-size: cover; /* Resize the background image to cover the entire conta
 .navbar-toggler {
   border-color: transparent!important;
 }
-.navbar-nav li {
-  border-bottom: solid 1px #333;
-  
-  margin-right: 2rem;
-  margin-left: 2rem;
 
-}
 .close {
   border: none;
  background-color: transparent;
@@ -547,13 +575,7 @@ background-size: cover; /* Resize the background image to cover the entire conta
 
     background-color: rgba(26, 26, 26, 1)!important;
 }
-.navbar-nav a {
-  color: white!important;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 11px;
-  line-height: 3;
-}
+
 
 .dropdown-toggle::after {
   position: absolute;
@@ -567,19 +589,7 @@ background-size: cover; /* Resize the background image to cover the entire conta
   margin-top: 10px;
   
 }
-.dropdown-menu {
-  background-color: inherit;
-  border: none;
-}
 
-.dropdown-menu li {
-color: inherit;
-margin-left: 0;
-}
-.dropdown-item:hover {
-  background-color:inherit;
-
-}
 
 }
 
