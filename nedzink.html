@@ -804,7 +804,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
 <section id="nedzink-downloads" class="downloads-section white-theme">
   <div class="container">
 <h2 data-aos="fade-down" data-aos-duration="1000">Downloadable Literature</h2>
-  <div class="downloads-container">
+  <div style="overflow-y:hidden" class="downloads-container">
 
   <a data-aos="fade-up" data-aos-duration="1000" target="_blank" href="downloads/nedzink/nedzink-corporate-brochure.pdf">
     <figure>
@@ -1246,7 +1246,7 @@ Brochure 1</label>
       AOS.init();
     </script>
 <script>
- $(".nav-item a").click(function() {
+ $(".tabs-section .nav-item a").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $(".tab-content").offset().top-170
         }, 200);
