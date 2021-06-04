@@ -980,8 +980,8 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
          
 
             <label for="nedzink-project-status">
-            <select class="form-select" aria-label="Default select" name="project-status" id="nedzink-project-status">
-              <option selected>Project Status?</option>
+            <select class="form-select" aria-label="Default select" name="project-status" id="nedzink-project-status" required>
+              <option value="" selected>Project Status?</option>
               <option value="begginning">Beginning</option>
               <option value="middle">Middle</option>
               <option value="end">End</option>
@@ -990,7 +990,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
 </label>
 <label for="nedzink-quote-required">
   <select class="form-select" aria-label="Default select" name="quote-required" id="nedzink-quote-required">
-    <option selected>Quote Required?</option>
+    <option value="" selected>Quote Required?</option>
     <option value="metal coil">Metal Coil</option>
     <option value="fabrication">Fabrication</option>
     <option value="full installation">Full Installation</option>
@@ -1239,8 +1239,26 @@ Brochure 1</label>
     <script>
       AOS.init();
     </script>
+<script>
+ $(".nav-item a").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(".tab-content").offset().top-170
+        }, 200);
+    });
 
+</script>
 
+  <!-- Contact Form Required Fields -->
+  <script>
+    $('.checkbox').change(function () {
+        if($(this).is(':checked')) {
+            $('.address').attr('required');
+        } else {
+            $('.address').removeAttr('required');
+        }
+    });
+    
+      </script>
 <script>
   $(document).ready(function() {
           // submit check
@@ -1302,17 +1320,6 @@ Brochure 1</label>
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }</script>
 
-  <!-- Contact Form Required Fields -->
-    <script>
-      $('.checkbox').change(function () {
-          if($(this).is(':checked')) {
-              $('.address').attr('required');
-          } else {
-              $('.address').removeAttr('required');
-          }
-      });
-      
-        </script>
 
 </body>
 </html>

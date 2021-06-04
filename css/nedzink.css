@@ -758,6 +758,7 @@ font-size: 13px;
 
 
 /* #region Form Section */
+
 .contact-form {
   padding-top: 70px;
   padding-bottom: 60px;
@@ -773,6 +774,13 @@ font-size: 13px;
       border-color: #b8b8b8;
     outline: none!important;
     box-shadow:none!important;
+}
+
+input:required {
+  border-color: red;
+}
+textarea:required {
+  border-color: red;
 }
 .contact-form input[type='text'], .contact-form input[type='tel'], .contact-form select {
   height: 53px;
